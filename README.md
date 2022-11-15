@@ -1,14 +1,16 @@
-# weather-forecast
-Weather Forecast App
+# weather_forecast
 
-How to install the mobile app on local machines
-- open this project with android studio or visual studio code
-- don't forget to upgrade your flutter version
-- run 'flutter pub get' on terminal for updated dependencies
+A new Flutter project.
 
-How to run the mobile app
-- you can push f5 in vs code or android studio
-- but if you want to be easy you can run 'flutter run' on terminal
-- don't fogert to connect your devices before run the project
-- this app can run in browser like chrome or edge (some layout not showing in microsoft edge)
+## Getting Started
 
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
