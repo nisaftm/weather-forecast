@@ -71,7 +71,7 @@ class ForeCastList {
     clouds = json['clouds'] != null ? Clouds.fromJson(json['clouds']) : null;
     wind = json['wind'] != null ? Wind.fromJson(json['wind']) : null;
     visibility = json['visibility'];
-    pop = json['pop'] == null ? 0.0 : json['pop'].toDouble();
+    pop = json['pop'].toDouble();
     rain = json['rain'] != null ? Rain.fromJson(json['rain']) : null;
     sys = json['sys'] != null ? Sys.fromJson(json['sys']) : null;
     dtTxt = json['dt_txt'];
@@ -203,9 +203,9 @@ class Wind {
   Wind({this.speed, this.deg, this.gust});
 
   Wind.fromJson(Map<String, dynamic> json) {
-    speed = json['speed'];
+    speed = json['speed'].toDouble();
     deg = json['deg'];
-    gust = json['gust'];
+    gust = json['gust'].toDouble();
   }
 
   Map<String, dynamic> toJson() {
@@ -223,7 +223,7 @@ class Rain {
   Rain({this.d3h});
 
   Rain.fromJson(Map<String, dynamic> json) {
-    d3h = json['3h'];
+    d3h = json['3h'].toDouble();
   }
 
   Map<String, dynamic> toJson() {
@@ -303,8 +303,8 @@ class Coord {
   Coord({this.lat, this.lon});
 
   Coord.fromJson(Map<String, dynamic> json) {
-    lat = json['lat'];
-    lon = json['lon'];
+    lat = json['lat'].toDouble();
+    lon = json['lon'].toDouble();
   }
 
   Map<String, dynamic> toJson() {
